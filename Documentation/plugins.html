@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Horizontal Layouts | Dashonic - React Admin & Dashboard Template | Docs</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Dashonic Premium Multipurpose Admin & Dashboard Template
+            documentation of React" name="description" />
+        <meta content="Pichforest" name="author" />
+        <meta name="keywords" content="Dashonic admin documentation, Dashonic React
+            documentation">
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+    </head>
+
+    <body data-topbar="dark" data-spy="scroll" data-target=".right-side-nav"
+        data-offset="175">
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+
+            <header id="page-topbar">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box">
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.png" alt="" height="25">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="20"> <span class="badge badge-soft-success ml-2">React 17.0.2</span>
+                                </span>
+                            </a>
+                        </div>
+                        <button type="button" class="btn btn-sm px-3 font-size-24
+                            header-item waves-effect d-lg-none" id="vertical-menu-btn">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                    </div>
+                    <div class="d-flex">
+
+                        <div class="d-none d-md-inline-block">
+                            <a
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSfiP9bDHzIQdQoMXFrYvJx00wyFzSu_cqBWP0N0uUHpqjrbzQ/viewform"
+                                target="_blank" class="header-item">Need Customization?</a>
+                        </div>
+
+                        <div class="d-inline-block">
+                            <h5 class="header-item m-0"><span class="badge badge-danger">v1.0.0</span></h5>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu">
+
+                <div data-simplebar class="h-100">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled" id="side-menu">
+                            <li class="menu-title">Docs</li>
+
+                            <li>
+                                <a href="index.html" class="waves-effect">
+                                    <i class="mdi mdi-text-box-outline"></i>
+                                    <span>Introduction</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="firebase.html" class="waves-effect">
+                                    <i class="mdi mdi-firebase"></i>
+                                    <span>Firebase Setup</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="fake-backend.html" class="waves-effect">
+                                    <i class="mdi mdi-code-tags"></i>
+                                    <span>Fake-Backend Setup</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="setup.html" class="waves-effect">
+                                    <i class="mdi mdi-cog-outline"></i>
+                                    <span>Setup</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="create-new-page.html" class="waves-effect">
+                                    <i class="mdi mdi-card-plus-outline"></i>
+                                    <span>Create a New page</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-title">Layouts</li>
+
+                            <li>
+                                <a href="vertical.html" class="waves-effect">
+                                    <i class="mdi mdi-flip-horizontal"></i>
+                                    <span>Vertical</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="horizontal.html" class="waves-effect">
+                                    <i class="mdi mdi-flip-vertical"></i>
+                                    <span>Horizontal</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-title">Themes</li>
+
+                            <li>
+                                <a href="light.html" class="waves-effect">
+                                    <i class="mdi mdi-white-balance-sunny"></i>
+                                    <span>Light Version</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="dark.html" class="waves-effect">
+                                    <i class="mdi mdi-weather-night"></i>
+                                    <span>Dark Version</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="rtl.html" class="waves-effect">
+                                    <i class="mdi mdi-web"></i>
+                                    <span>RTL Version</span>
+                                </a>
+                            </li>
+
+                            <li class="menu-title">Other</li>
+
+                            <li>
+                                <a href="plugins.html" class="waves-effect">
+                                    <i class="mdi mdi-format-list-bulleted"></i>
+                                    <span>Plugins</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="changelog.html" class="waves-effect">
+                                    <i class="mdi mdi-format-list-bulleted"></i>
+                                    <span>Changelog</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-flex
+                                    align-items-center justify-content-between">
+                                    <h3 class="mb-0 font-size-24">Plugins</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="p-lg-1">
+
+                                            <div class="d-xl-flex">
+
+                                                <div class="w-100">
+
+                                                    <p class="text-muted">Here
+                                                        is the list of Plugins
+                                                        (with a link to the
+                                                        official
+                                                        documentation) which
+                                                        helped us to make admin
+                                                        better.</p>
+
+                                                    <div
+                                                        class="table-responsive">
+                                                        <table class="table
+                                                            mb-0">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Plugins</th>
+                                                                    <th>Url</th>
+                                                                </tr>
+                                                            </thead>
+
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>@fullcalendar/bootstrap</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@fullcalendar/bootstrap"
+                                                                            target="_blank">@fullcalendar/bootstrap
+                                                                            :
+                                                                            ^5.9.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@fullcalendar/daygrid</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@fullcalendar/daygrid"
+                                                                            target="_blank">@fullcalendar/daygrid
+                                                                            :
+                                                                            ^5.9.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@fullcalendar/interaction</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@fullcalendar/interaction"
+                                                                            target="_blank">@fullcalendar/interaction
+                                                                            :
+                                                                            ^5.9.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@fullcalendar/react</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@fullcalendar/react"
+                                                                            target="_blank">@fullcalendar/react
+                                                                            :
+                                                                            ^5.9.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@lourenci/react-kanban</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@lourenci/react-kanban"
+                                                                            target="_blank">@lourenci/react-kanban
+                                                                            :
+                                                                            ^2.1.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@reduxjs/toolkit</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@reduxjs/toolkit"
+                                                                            target="_blank">@reduxjs/toolkit
+                                                                            :
+                                                                            ^1.6.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@testing-library/jest-dom</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@testing-library/jest-dom"
+                                                                            target="_blank">@testing-library/jest-dom
+                                                                            :
+                                                                            ^5.14.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@testing-library/react</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@testing-library/react"
+                                                                            target="_blank">@testing-library/react
+                                                                            :
+                                                                            ^12.0.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@testing-library/user-event</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@testing-library/user-event"
+                                                                            target="_blank">@testing-library/user-event
+                                                                            :
+                                                                            ^13.2.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@types/feather-icons</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@types/feather-icons"
+                                                                            target="_blank">@types/feather-icons
+                                                                            :
+                                                                            ^4.7.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>types/jest</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/types/jest"
+                                                                            target="_blank">types/jest
+                                                                            :
+                                                                            ^27.0.2</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@types/node</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@types/node"
+                                                                            target="_blank">@types/node
+                                                                            :
+                                                                            ^16.9.6</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@types/react</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@types/react"
+                                                                            target="_blank">@types/react
+                                                                            :
+                                                                            ^17.0.24</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@types/react-dom</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@types/react-dom"
+                                                                            target="_blank">@types/react-dom
+                                                                            :
+                                                                            ^17.0.9</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@types/react-router-dom</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@types/react-router-dom"
+                                                                            target="_blank">@types/react-router-dom
+                                                                            :
+                                                                            ^5.3.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>@vtaits/react-color-picker</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/@vtaits/react-color-picker"
+                                                                            target="_blank">@vtaits/react-color-picker
+                                                                            :
+                                                                            ^0.1.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>apexcharts</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/apexcharts"
+                                                                            target="_blank">apexcharts
+                                                                            :
+                                                                            ^3.28.3</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>availity-reactstrap-validation</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/availity-reactstrap-validation"
+                                                                            target="_blank">availity-reactstrap-validation
+                                                                            :
+                                                                            ^2.7.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>axios</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/axios"
+                                                                            target="_blank">axios
+                                                                            :
+                                                                            ^0.21.4</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>axios-mock-adapter</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/axios-mock-adapter"
+                                                                            target="_blank">axios-mock-adapter
+                                                                            :
+                                                                            ^1.20.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>bootstrap</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/bootstrap"
+                                                                            target="_blank">bootstrap
+                                                                            :
+                                                                            ^5.1.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>chart.js</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/chart.js"
+                                                                            target="_blank">chart.js
+                                                                            :
+                                                                            ^2.9.4</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>classnames</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/classnames"
+                                                                            target="_blank">classnames
+                                                                            :
+                                                                            ^2.3.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>draft-js</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/draft-js"
+                                                                            target="_blank">draft-js
+                                                                            :
+                                                                            ^0.11.7</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>echarts</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/echarts"
+                                                                            target="_blank">echarts
+                                                                            :
+                                                                            ^4.9.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>echarts-for-react</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/echarts-for-react"
+                                                                            target="_blank">echarts-for-react
+                                                                            :
+                                                                            ^3.0.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>feather-icons-react</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/feather-icons-react"
+                                                                            target="_blank">feather-icons-react
+                                                                            :
+                                                                            ^0.4.3</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>firebase</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/firebase"
+                                                                            target="_blank">firebase
+                                                                            :
+                                                                            ^8.7.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>google-maps-react</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/google-maps-react"
+                                                                            target="_blank">google-maps-react
+                                                                            :
+                                                                            ^2.0.6</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>i18next</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/i18next"
+                                                                            target="_blank">i18next
+                                                                            :
+                                                                            ^21.1.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>i18next-browser-languagedetector</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/i18next-browser-languagedetector"
+                                                                            target="_blank">i18next-browser-languagedetector
+                                                                            :
+                                                                            ^6.1.2</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>leaflet</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/leaflet"
+                                                                            target="_blank">leaflet
+                                                                            :
+                                                                            ^1.7.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>lodash</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/lodash"
+                                                                            target="_blank">lodash
+                                                                            :
+                                                                            ^4.17.21</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>lodash.clonedeep</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/lodash.clonedeep"
+                                                                            target="_blank">lodash.clonedeep
+                                                                            :
+                                                                            ^4.5.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>metismenujs</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/metismenujs"
+                                                                            target="_blank">metismenujs
+                                                                            :
+                                                                            ^1.3.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>moment</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/moment"
+                                                                            target="_blank">moment
+                                                                            :
+                                                                            ^2.29.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>node-sass</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/node-sass"
+                                                                            target="_blank">node-sass
+                                                                            :
+                                                                            ^6.0.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react"
+                                                                            target="_blank">react
+                                                                            :
+                                                                            ^17.0.2</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-apexcharts</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-apexcharts"
+                                                                            target="_blank">react-apexcharts
+                                                                            :
+                                                                            ^1.3.9</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-auth-code-input</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-auth-code-input"
+                                                                            target="_blank">react-auth-code-input
+                                                                            :
+                                                                            ^1.2.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-bootstrap-sweetalert</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-bootstrap-sweetalert"
+                                                                            target="_blank">react-bootstrap-sweetalert
+                                                                            :
+                                                                            ^5.2.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-bootstrap-table-next</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-bootstrap-table-next"
+                                                                            target="_blank">react-bootstrap-table-next
+                                                                            :
+                                                                            ^4.0.3</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-bootstrap-table2-editor</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-bootstrap-table2-editor"
+                                                                            target="_blank">react-bootstrap-table2-editor
+                                                                            :
+                                                                            ^1.4.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-bootstrap-table2-paginator</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-bootstrap-table2-paginator"
+                                                                            target="_blank">react-bootstrap-table2-paginator
+                                                                            :
+                                                                            ^2.1.2</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-bootstrap-table2-toolkit</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-bootstrap-table2-toolkit"
+                                                                            target="_blank">react-bootstrap-table2-toolkit
+                                                                            :
+                                                                            ^2.1.3</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-chartjs-2</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-chartjs-2"
+                                                                            target="_blank">react-chartjs-2
+                                                                            :
+                                                                            ^2.11.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-color</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-color"
+                                                                            target="_blank">react-color
+                                                                            :
+                                                                            ^2.19.3</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-countdown</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-countdown"
+                                                                            target="_blank">react-countdown
+                                                                            :
+                                                                            ^2.3.2</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-countup</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-countup"
+                                                                            target="_blank">react-countup
+                                                                            :
+                                                                            ^5.2.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-dom</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-dom"
+                                                                            target="_blank">react-dom"
+                                                                            :
+                                                                            ^17.0.2</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-draft-wysiwyg</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-draft-wysiwyg"
+                                                                            target="_blank">react-draft-wysiwyg"
+                                                                            :
+                                                                            ^1.14.7</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-drawer</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-drawer"
+                                                                            target="_blank">react-drawer"
+                                                                            :
+                                                                            ^1.3.4</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-dropzone</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-dropzone"
+                                                                            target="_blank">react-dropzone"
+                                                                            :
+                                                                            ^11.3.4</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-facebook-login</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-facebook-login"
+                                                                            target="_blank">react-facebook-login"
+                                                                            :
+                                                                            ^4.1.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-flatpickr</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-flatpickr"
+                                                                            target="_blank">react-flatpickr"
+                                                                            :
+                                                                            ^3.10.7</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-google-login</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-google-login"
+                                                                            target="_blank">react-google-login"
+                                                                            :
+                                                                            ^5.2.2</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-i18next</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-i18next"
+                                                                            target="_blank">react-i18next"
+                                                                            :
+                                                                            ^11.11.4</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-image-lightbox</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-image-lightbox"
+                                                                            target="_blank">react-image-lightbox"
+                                                                            :
+                                                                            ^5.1.4</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-input-mask</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-input-mask"
+                                                                            target="_blank">react-input-mask"
+                                                                            :
+                                                                            ^2.0.4</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-jvectormap</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-jvectormap"
+                                                                            target="_blank">react-jvectormap"
+                                                                            :
+                                                                            ^0.0.16</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-leaflet</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-leaflet"
+                                                                            target="_blank">react-leaflet"
+                                                                            :
+                                                                            ^2.7.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-meta-tags</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-meta-tags"
+                                                                            target="_blank">react-meta-tags"
+                                                                            :
+                                                                            ^1.0.1</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-modal-video</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-modal-video"
+                                                                            target="_blank">react-modal-video"
+                                                                            :
+                                                                            ^1.2.8</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-perfect-scrollbar</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-perfect-scrollbar"
+                                                                            target="_blank">react-perfect-scrollbar"
+                                                                            :
+                                                                            ^1.5.8</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-rangeslider</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-rangeslider"
+                                                                            target="_blank">react-rangeslider"
+                                                                            :
+                                                                            ^2.2.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-rating</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-rating"
+                                                                            target="_blank">react-rating"
+                                                                            :
+                                                                            ^2.0.5</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-rating-tooltip</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-rating-tooltip"
+                                                                            target="_blank">react-rating-tooltip"
+                                                                            :
+                                                                            ^1.2.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-redux</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-redux"
+                                                                            target="_blank">react-redux"
+                                                                            :
+                                                                            ^7.2.4</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-router</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-router"
+                                                                            target="_blank">react-router"
+                                                                            :
+                                                                            ^5.2.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-router-dom</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-router-dom"
+                                                                            target="_blank">react-router-dom"
+                                                                            :
+                                                                            ^5.2.0</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-scripts</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-scripts"
+                                                                            target="_blank">react-scripts"
+                                                                            :
+                                                                            "4.0.3</a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>react-select</td>
+                                                                    <td>
+                                                                        <a
+                                                                            href="https://www.npmjs.com/package/react-select"
+                                                                            target="_blank">react-select"
+                                                                            :
+                                                                            ^4.3.1">
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>react-slick</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/react-slick"
+                                                                                target="_blank">react-slick"
+                                                                                :
+                                                                                ^0.28.1</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>react-sparklines</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/react-sparklines"
+                                                                                target="_blank">react-sparklines"
+                                                                                :
+                                                                                ^1.7.0</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>react-super-responsive-table</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/react-super-responsive-table"
+                                                                                target="_blank">react-super-responsive-table"
+                                                                                :
+                                                                                ^5.2.0</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>reactstrap</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/reactstrap"
+                                                                                target="_blank">reactstrap"
+                                                                                :
+                                                                                ^8.9.0</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>redux-devtools-extension</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/redux-devtools-extension"
+                                                                                target="_blank">redux-devtools-extension"
+                                                                                :
+                                                                                ^2.13.9</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>redux-thunk</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/redux-thunk"
+                                                                                target="_blank">redux-thunk"
+                                                                                :
+                                                                                ^2.3.0</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>simplebar-react</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/simplebar-react"
+                                                                                target="_blank">simplebar-react"
+                                                                                :
+                                                                                ^2.3.4</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>swiper</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/swiper"
+                                                                                target="_blank">swiper"
+                                                                                :
+                                                                                ^6.8.1</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>typescript</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/typescript"
+                                                                                target="_blank">typescript"
+                                                                                :
+                                                                                ^4.1.2</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>web-vitals</td>
+                                                                        <td>
+                                                                            <a
+                                                                                href="https://www.npmjs.com/package/web-vitals"
+                                                                                target="_blank">web-vitals"
+                                                                                :
+                                                                                ^1.0.1</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <!-- end card -->
+                                </div>
+                            </div>
+                            <!-- end row -->
+
+                        </div> <!-- container-fluid -->
+                    </div>
+                    <!-- End Page-content -->
+                    <footer class="footer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <script>document.write(new Date().getFullYear())</script> © Pichforest.
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="text-sm-right d-none d-sm-block">
+                                        Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="" class="text-muted">Pichforest</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <!-- end main content-->
+
+            </div>
+            <!-- END layout-wrapper -->
+            <!-- JAVASCRIPT -->
+            <script src="assets/libs/jquery/jquery.min.js"></script>
+            <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="assets/libs/simplebar/simplebar.min.js"></script>
+            <script src="assets/libs/jquery.easing/jquery.easing.min.js"></script>
+
+            <script src="assets/js/app.js"></script>
+
+        </body>
+    </html>

@@ -1,0 +1,123 @@
+// 
+// Kanbanboard . scss
+// 
+
+
+// task
+
+.task-board{
+  display: flex;
+  white-space: nowrap;
+  overflow-x: auto;
+  align-items: stretch;
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:vertical {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba($dark, .2);
+    border-radius: 10px;
+    border: 2px solid $white;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;  
+    background-color: $white; 
+  }
+}
+
+.tasks{
+  min-height: 300px;
+}
+
+.task-list{
+  min-width: 280px;
+  white-space: normal;
+
+  @media (min-width: 576px) {
+    width: 400px;
+    min-width: 400px;
+  }
+  
+  
+  &:not(:last-child) {
+      margin-right: 20px;
+  }
+
+  .tasklist-content{
+    max-height: calc(100vh - 430px);
+  }
+
+  .task-box{
+      border: 1px solid $gray-300;
+
+      &:last-child{
+          margin-bottom: 0;
+      }
+  }
+  
+}
+
+[data-rbd-drag-handle-context-id]{
+  > div{
+    width: 100%;
+  }
+}
+
+.gu-transit {
+    border: 1px dashed $gray-600 !important;
+    background-color: $gray-200 !important;
+}
+
+body[data-layout-mode="dark"] {
+  .task-board{
+  
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba($white, .075);
+      border: 2px solid $gray-dark-200;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background-color: $gray-dark-200; 
+    }
+  }
+}
+
+.react-kanban-card-adder-form__title{
+  border: 0px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px;
+}
+.react-kanban-card-adder-form__description{
+  border: 0px;
+  font-family: inherit;
+  font-size: inherit;
+  margin-top: 10px;
+}
+.react-kanban-card-adder-form__button{
+  background-color: rgb(238, 238, 238);
+    border: none;
+    padding: 5px;
+    width: 45%;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+input.react-kanban-card-adder-form__title:focus ,input.react-kanban-card-adder-form__description:focus{
+  border: 1px solid rgb(0, 0, 0);
+}
